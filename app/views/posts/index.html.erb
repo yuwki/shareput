@@ -1,0 +1,25 @@
+<%= render "shared/header" %>
+
+<div class= 'main'>
+  <%# 画面上部の写真帯部分 %>
+    <div class= 'title-contents'>
+      <h1 class= 'service-title'>
+      一歩ずつ目標に向かって進むためのアウトプットアプリ
+      </h1>
+      <p class='service-explain'>
+      －日々の学びを発信して共有しよう－
+      </p>
+    </div>
+  <%# 投稿一覧ページ%>
+    <div class="contents">
+      <h2>トピック一覧</h2>
+      <ul>
+      <li><%= link_to "トピック1", root_path %></li>
+      <li><%= link_to "トピック2", root_path %></li>
+      </ul>
+    </div>
+    <div class="topic-create">
+    <h3><%= link_to "新規トピック作成", root_path %></h3>
+
+</div>
+<%= render "shared/footer" %>
