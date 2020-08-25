@@ -8,7 +8,7 @@
 
 
 <h3>新規書き込み</h3>
-<%= form_with model: [@topic,@post], local: true do |f| %>
+<%= form_with model: @topic do |f| %>
   <p>タイトル</p>
   <p><%= f.text_field :name %></p>
   <p>アウトプット</p>

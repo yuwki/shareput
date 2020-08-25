@@ -1,0 +1,9 @@
+<%= render "shared/header" %>
+
+<h1>トピック新規登録</h1>
+<%= form_with model: @topic do |f| %>
+  <%= f.text_field :title %>
+  <%= f.submit %>
+<% end %>
+
+<%# <%= render "shared/footer" %>
