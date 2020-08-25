@@ -1,0 +1,50 @@
+.top-header {
+  justify-content: space-between;
+  background-color: #272727;
+}
+
+.top-name {
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+}
+
+.user-nickname {
+  font-size: 30px;
+  text-decoration: none;
+  border: solid 1.5px;
+  padding: 5px;
+  color: white;
+}
+
+.logout {
+  font-size: 30px;
+  text-decoration: none;
+  border: solid 1.5px;
+  padding: 5px;
+  color: white;
+}
+
+.logout {
+  font-size: 30px;
+  text-decoration: none;
+  border: solid 1.5px;
+  padding: 5px;
+  color: white;
+}
+
+.login {
+  font-size: 30px;
+  text-decoration: none;
+  border: solid 1.5px;
+  padding: 5px;
+  color: white;
+}
+
+.sign-up {
+  font-size: 30px;
+  text-decoration: none;
+  border: solid 1.5px;
+  padding: 5px;
+  color: white;
+}
