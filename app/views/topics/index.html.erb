@@ -1,31 +1,32 @@
 <%= render "shared/header" %>
 
 <div class= 'main'>
-  <%# 画面上部の写真帯部分 %>
-    <div class= 'title-contents'>
-      <h1 class= 'service-title'>
+    <div class='title-contents'>
+      <h1 class='service-title'>
       一歩ずつ目標に向かって進むためのアウトプットアプリ
       </h1>
       <p class='service-explain'>
       －日々の学びを発信して共有しよう－
       </p>
     </div>
-  <%# 投稿一覧ページ%>
-    <div class="contents">
-      <h2>トピック一覧</h2>
-      <ul>
-      <% @topics.each do |topic| %>
-        <li>
-          <%= link_to topic.title, topic_posts_path(topic.id) %>
-            <% if user_signed_in? && current_user.id == topic.user.id %> 
-             <%= link_to "[削除]",topic_path(topic.id), method: :delete, data: {confirm: "本当に削除してもよろしいですか？"} %>
-            <% end %>
+
+    <p class="topic-index">トピック一覧</p>
+    <div>
+      <ul class="contents">
+        <li class="list">
+          <% @topics.each do |topic| %>
+          <div  class="a">
+            <%= link_to topic.title, topic_posts_path(topic.id), class:"topic-contents" %>
+              <% if user_signed_in? && current_user.id == topic.user.id %> 
+                <%= link_to image_tag('dust-box.png',class: "btn-icon"),topic_path(topic.id), method: :delete, data: {confirm: "本当に削除してもよろしいですか？"}, class:"topic-contents" %>
+          </div>
+              <% end %>
+          <% end %>
         </li>
-      <% end %>
       </ul>
     </div>
     <div class="topic-create">
-    <h3><%= link_to "新規トピック作成", new_topic_path %></h3>
 
 </div>
 <%= render "shared/footer" %>
+
