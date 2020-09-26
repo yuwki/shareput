@@ -1,0 +1,15 @@
+<div class="chat-content">
+  <% if user_signed_in?%>
+    <%= form_with model: [@topic,@post], local: true do |f| %>
+      <p class="box">タイトル</p>
+      <p class="box"><%= f.text_field :name %></p>
+      <p class="box"> アウトプット</p>
+      <p class="box"><%= f.text_area :text %></p>
+      <div class="btn">
+      <%= f.submit "投稿する", class:"fbtn"%>
+      </div>
+    <% end %>
+  <% else%>
+    <p>--投稿するには新規登録・ログインが必要です--</p>
+  <%end%>
+</div>
