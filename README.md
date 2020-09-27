@@ -71,3 +71,7 @@ SHAREPUT
 - belongs_to :user
 - belongs_to :topic
 
+<img width="609" alt="スクリーンショット 2020-08-21 12 39 05" src="https://user-images.githubusercontent.com/68524338/94361226-c5294f00-00ed-11eb-84b2-e091a542a45d.png">
+
+## 画面遷移図
+<img width="574" alt="スクリーンショット 2020-08-21 14 47 18" src="https://user-images.githubusercontent.com/68524338/94361227-c6f31280-00ed-11eb-9843-506b8f3867be.png">
